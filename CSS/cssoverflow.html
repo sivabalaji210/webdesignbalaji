@@ -3,16 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS poistions</title>
+    <title>CSS overflow</title>
     <style>
         h2 {
-            position: fixed;
-            
-            
+            width: 200px;
+            height: 50px;
             border: 2px solid red;
             background-color: lightblue;
             padding: 10px;
-        }
+            overflow: scroll; /* Hide overflow content */
+            text-overflow: ellipsis; /* Add ellipsis for overflow text */
+            white-space: nowrap; /* Prevent text from wrapping */
+        }    
+
        
         
 
@@ -41,5 +44,7 @@
     <p>css postions play an impratnt role in html webdesigning</p>
     <p>css postions play an impratnt role in html webdesigning</p>
     <p>css postions play an impratnt role in html webdesigning</p>
+</body>
+</html>
 </body>
 </html>
