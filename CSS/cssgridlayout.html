@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gridlayout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .container {
+            display: grid;
+            grid-template-areas:
+                "header header header"
+                "menu content content"
+                "footer footer footer";
+            grid-gap: 10px;
+            padding: 10px;
+        }
+        .header {
+            grid-area: header;
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .MENU {
+            grid-area: menu;
+            background-color: #2196F3;
+            color: white;
+            padding: 20px;
+        }
+        .MENU a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            margin: 10px 0;
+        }
+        .content {
+            grid-area: content;
+            background-color: #f1f1f1;
+            padding: 20px;
+        }
+        .footer {
+            grid-area: footer;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>THE GRID LAYOUT</h1>
+    <div class="container">
+        <div class="header"><h1>WELCOME TO BALAJI</h1></div>
+        <div class="MENU">
+        <a href="#">HOME</a>
+        <a href="#">ABOUT</a>
+        <a href="#">SERVICES</a>
+        <a href="#">CONTACT</a>     
+        </div>
+        <div class="content"><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat dolore exercitationem eveniet pariatur maxime necessitatibus nostrum nesciunt odit, ad cum aliquid quaerat esse vitae repudiandae corrupti dolor a mollitia blanditiis?</p></div>
+        <div class="footer"><p>all rights are under the my@123</p></div>
+    </div>
+</body>
+</html>
